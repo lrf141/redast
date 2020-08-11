@@ -10,7 +10,7 @@
 
 #include "server.h"
 #include "opt.h"
-#include "log.h"
+#include "syslog.h"
 
 void start(serverOption *opt) {
 	int sock;

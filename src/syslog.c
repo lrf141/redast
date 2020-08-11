@@ -3,7 +3,7 @@
 //
 
 #include <time.h>
-#include "log.h"
+#include "syslog.h"
 
 void printLocalTime() {
 	time_t timer;
