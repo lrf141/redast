@@ -1,5 +1,5 @@
 REDAST_SERVER_NAME=redast
-REDAST_SERVER_OBJ=main.o opt.o
+REDAST_SERVER_OBJ=main.o opt.o server.o log.o
 
 CCCOLOR="\033[34m"
 LINKCOLOR="\033[34;1m"

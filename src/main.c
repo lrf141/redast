@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "opt.h"
+#include "server.h"
 
 int main(int argc, char *argv[]) {
 
@@ -27,7 +28,7 @@ int main(int argc, char *argv[]) {
         			break;
         	}
         }
-        free(srvOpt);
-
+        start(srvOpt);
+	free(srvOpt);
         return 0;
 }
