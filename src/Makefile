@@ -39,6 +39,6 @@ $(REDAST_SERVER_NAME): $(REDAST_SERVER_OBJ)
 	$(REDAST_LD) -o $@ $^ $(FINAL_LIBS)
 
 clean:
-	rm -rf src/*.o
+	rm -rf *.o
 	rm -rf Makefile.dep
 	rm -rf $(REDAST_SERVER_NAME)
