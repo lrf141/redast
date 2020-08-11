@@ -17,3 +17,10 @@ int validatePort(int port) {
 		return 0;
 	return 1;
 }
+
+serverOption *getDefaultSetting() {
+	serverOption *srvOpt = (serverOption *)malloc(sizeof(serverOption));
+	srvOpt->port = 6000;
+
+	return srvOpt;
+}

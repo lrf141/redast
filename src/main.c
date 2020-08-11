@@ -10,8 +10,7 @@
 
 int main(int argc, char *argv[]) {
 
-	serverOption *srvOpt;
-	srvOpt = (serverOption *)malloc(sizeof(serverOption));
+	serverOption *srvOpt = getDefaultSetting();
         int opt = 0;
         while ((opt = getopt(argc, argv, "hp::")) != -1) {
         	switch (opt) {

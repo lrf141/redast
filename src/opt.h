@@ -11,5 +11,6 @@ typedef struct serverOption {
 
 void printHelp();
 int validatePort(int);
+serverOption *getDefaultSetting();
 
 #endif //REDAST_OPT_H
