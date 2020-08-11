@@ -50,3 +50,12 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# runnable binary
+src/redast
+
+# CLion Settings
+.idea/
+
+# Make dep
+Makefile.dep
