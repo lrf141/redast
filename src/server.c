@@ -33,7 +33,7 @@ void start(serverOption *opt) {
 	struct sockaddr_in client;
 	while (1) {
 		len = sizeof(client);
-		sock0 = accept(sock, (struct sockaddr *)&client, &len);
+		sock0 = accept(sock, (struct sockaddr *)&client, (socklen_t *)&len);
 		write(sock0, "HELLO", 5);
 		close(sock0);
 	}
